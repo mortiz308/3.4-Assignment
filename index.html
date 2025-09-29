@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.4 Assignment</title>
+</head>
+<body>
+  <script src="./app.js"></script>
+  <h2>Click Event</h2>
+  <button onclick="document.getElementById('clickEvent').innerHTML=Date()">Click for Current Time</button>
+  <p id="clickEvent"></p>
+
+  <h2>Employee Info</h2>
+  
+  <p id="employee"></p>
+
+<script>
+// Create an Object:
+const employee = {name:"Joe", salary:"$83,000/yr", yearsEmployed:"8 yrs"};
+
+// Display Data from the Object:
+document.getElementById("employee").innerHTML =
+"Employee Name: " + employee.name + " |  Salary: " + employee.salary + " |  Years Employed: " + employee.yearsEmployed;
+
+</script>
+  
+</body>
+</html>
